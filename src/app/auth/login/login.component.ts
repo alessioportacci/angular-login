@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit
     //Mi creo l'oggetto da passare al login
     const loginData:ILogin =
     {
-      email: this.formLogin.get('email')       as unknown as string,
-      password: this.formLogin.get('password') as unknown as string
+      email: this.formLogin.get('email')?.value,
+      password: this.formLogin.get('password')?.value
     }
 
     //Lo passo al login

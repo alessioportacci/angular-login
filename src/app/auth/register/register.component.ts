@@ -37,11 +37,13 @@ export class RegisterComponent implements OnInit
     //Mi creo l'oggetto da passare al register
     const registerData:IRegister =
     {
-      nome: this.formRegister.get('nome')         as unknown as string,
-      cognome: this.formRegister.get('cognome')   as unknown as string,
-      email: this.formRegister.get('email')       as unknown as string,
-      password: this.formRegister.get('password') as unknown as string
+      nome: this.formRegister.get('nome')?.value,
+      cognome: this.formRegister.get('cognome')?.value,
+      email: this.formRegister.get('email')?.value,
+      password: this.formRegister.get('password')?.value
     }
+
+    console.log(registerData)
 
     //Lo passo al register
     this.authSrv.signUp(registerData)

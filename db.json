@@ -1,3 +1,11 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "aa@aa",
+      "password": "$2a$10$YyMM.6KUxzm58tUeZIo6I.OChniZCbUJtrN30r.hLyqW4ly.Q1mJy",
+      "nome": "Alessio",
+      "cognome": "Portacci",
+      "id": 1
+    }
+  ]
 }
